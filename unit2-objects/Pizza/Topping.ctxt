@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=Topping
+comment0.text=\n\ Write\ a\ description\ of\ class\ Topping\ here.\n\ \n\ @author\ (your\ name)\ \n\ @version\ (a\ version\ number\ or\ a\ date)\n
+comment1.params=name
+comment1.target=Topping(java.lang.String)
+comment2.params=
+comment2.target=void\ act()
+comment3.params=
+comment3.target=void\ fall()
+numComments=4

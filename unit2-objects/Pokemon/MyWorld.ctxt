@@ -1,7 +1,24 @@
 #BlueJ class context
 comment0.target=MyWorld
-comment0.text=\n\ Write\ a\ description\ of\ class\ MyWorld\ here.\n\ \n\ @author\ (your\ name)\ \n\ @version\ (a\ version\ number\ or\ a\ date)\n
+comment0.text=\n\ Pokemon\ Battle\!\ You\ (Ash)\ and\ the\ computer\ (Gary)\ take\ turns.\n\ Whoever\ gets\ their\ Pokemon\ knocked\ out\ first\ loses.\n\n\ \ \ A\ \=\ attack\ \ \ \ \ H\ \=\ heal\ \ \ \ \ 1-4\ \=\ switch\ Pokemon\n\n\ @author\ Ryan\ Norouzi\n\ @version\ 10/2/2026\n
 comment1.params=
 comment1.target=MyWorld()
-comment1.text=\n\ Constructor\ for\ objects\ of\ class\ MyWorld.\n\ \n
-numComments=2
+comment1.text=\n\ Constructor\ for\ objects\ of\ class\ MyWorld.\n\n
+comment2.params=
+comment2.target=void\ prepare()
+comment2.text=\n\ Prepare\ the\ world\ for\ the\ start\ of\ the\ program.\n\ That\ is\:\ create\ the\ initial\ objects\ and\ add\ them\ to\ the\ world.\n
+comment3.params=
+comment3.target=void\ act()
+comment4.params=key
+comment4.target=void\ playerTurn(java.lang.String)
+comment5.params=
+comment5.target=void\ computerTurn()
+comment5.text=\n\ The\ computer\ heals\ when\ it\ is\ low,\ sometimes\ switches,\ and\ otherwise\ attacks.\n
+comment6.params=attacker\ defender
+comment6.target=java.lang.String\ useAttack(User,\ User)
+comment6.text=\n\ The\ attacker\ uses\ their\ Pokemon's\ attack\ on\ the\ defender.\n\ Returns\ a\ message\ saying\ what\ happened.\n
+comment7.params=
+comment7.target=void\ updateHp()
+comment8.params=text
+comment8.target=void\ endGame(java.lang.String)
+numComments=9

@@ -8,12 +8,53 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class User extends Actor
 {
-    /**
-     * Act - do whatever the User wants to do. This method is called whenever
-     * the 'Act' or 'Run' button gets pressed in the environment.
-     */
-    public void act()
+    private String name;
+    private Pokemon pokemon;
+
+    public User(String name)
     {
-        // Add your action code here.
+        this.name = name;
+        setImage(new GreenfootImage(" " + name + " ", 28, Color.WHITE, new Color(0, 0, 0, 160)));
+    }
+
+    public void setPokemon(Pokemon p)
+    {
+        pokemon = p;
+    }
+
+    public Pokemon getPokemon()
+    {
+        return pokemon;
+    }
+
+    public void switchPokemon(Pokemon newPokemon)
+    {
+        if (pokemon != null && pokemon.getWorld() != null)
+        {
+            World world = pokemon.getWorld();
+            world.addObject(newPokemon, pokemon.getX(), pokemon.getY());
+            world.removeObject(pokemon);
+        }
+        pokemon = newPokemon;
+    }
+
+    public void heal()
+    {
+        pokemon.heal();
+    }
+
+    public void attack(String name, User enemy)
+    {
+        pokemon.attack(name, enemy);
+    }
+
+    public boolean isEndGame()
+    {
+        return pokemon.isOut();
+    }
+
+    public String getName()
+    {
+        return name;
     }
 }

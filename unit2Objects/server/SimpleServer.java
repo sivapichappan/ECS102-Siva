@@ -43,15 +43,13 @@ public class SimpleServer {
         smp.acceptClient();
         Scanner input = new Scanner(System.in);
         while (true) {
-            String message = input.nextLine();
-            smp.sendMessage(message);
-            // smp.sendMessage("hello");
             String msg = smp.receiveMessage();
-            System.out.print("Client  " + msg);
+            System.out.println("Client: " + msg);
             if (msg.equals("stop")) {
                 break;
             }
-
+            String reply = input.nextLine();
+            smp.sendMessage(reply);
         }
         smp.close();
 
